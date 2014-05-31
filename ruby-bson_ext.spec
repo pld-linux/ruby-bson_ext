@@ -18,6 +18,7 @@ Source1:	%{gem_name}-%{version}-tests.tgz
 URL:		http://www.mongodb.org/display/DOCS/BSON
 BuildRequires:	rpm-rubyprov
 BuildRequires:	rpmbuild(macros) >= 1.656
+BuildRequires:	ruby-devel
 BuildRequires:	setup.rb
 %if %{with tests}
 BuildRequires:	ruby-bson >= 1.4.0
