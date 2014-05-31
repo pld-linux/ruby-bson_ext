@@ -65,7 +65,7 @@ ruby -Iext -e "require 'bson'; Dir.glob('./test/bson/*_test.rb').each {|t| requi
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{ruby_vendorarchdir}
-install -p ext/cbson/cbson.so  $RPM_BUILD_ROOT%{ruby_vendorarchdir}
+install -p ext/cbson/cbson.so $RPM_BUILD_ROOT%{ruby_vendorarchdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
